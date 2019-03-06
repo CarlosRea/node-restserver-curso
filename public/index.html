@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!--<img src="http://localhost:3000/imagen/usuarios/5c599809f858b012983d46fa-763.jpg?token=123" alt="">-->
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <a href="#" onclick="signOut();">Sign out</a>
     <script>
@@ -31,7 +32,6 @@
 
             var id_token = googleUser.getAuthResponse().id_token;
             console.log(id_token);
-
 
             var xhr = new XMLHttpRequest();
             xhr.open('POST', '/google');
